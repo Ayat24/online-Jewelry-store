@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluenile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="Gantari-Italic-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="">
+<div class="h-100 signup d-flex justify-content-center bg-danger align-items-center">
+    
+        <div class="inner p-4 shadow w-35 rounded-2 d-flex justify-content-center align-items-center my-5 flex-column text-center">
+            <h3 class="">SIGN UP</h3>
+            <input type="text" oninput="validationName()" class="form-control my-3" placeholder="Enter Your Name" id="signupName">
+            <div id="messName" class="alert alert-danger d-none">It must includes small & capital characters only</div>
+            <input type="text" class="form-control my-3" placeholder="Enter Your Email" id="signupEmail" oninput="validationEmail()">
+            <div id="messEmail" class="alert alert-danger d-none">It must includes numbers and small char , end with .com</div>
+             <input type="password" oninput="validationPassword()" class="form-control mt-3" placeholder="Enter Your Password" id="signupPassword">
+             <div id="messPassword" class="alert alert-danger d-none">It must includes chars,digits</div>
+             <button class="btn btn-outline-info w-100 my-3" onclick="add()" id="signupBtn">SIGN UP</button>
+             <div class="text-dark">
+                <span class="fs-6">You have an account?</span>
+                <a href="login.html" target="_self" class="fs-6 text-color">Login</a>
+             </div>
+        </div>
+    
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/register.js"></script>
+
+</body>
+</html>

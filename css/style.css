@@ -1,0 +1,709 @@
+:root{
+    --dark-color:#151542;
+}
+@font-face {
+    font-family: Ganatari;
+    src: url(../Gantari-VariableFont_wght.ttf);
+}
+.text-color{
+    color: var(--dark-color) !important;
+}
+*{
+    font-family: Ganatari;
+    
+}
+/**            Start Navbar              */
+.navbar-brand h1{
+    font-family: serif;
+    font-size: 33px;
+    font-weight: bold;
+}
+#cart-count {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgb(146, 196, 230);
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* تأثير الظل */
+    transform: translate(10px, -10px); /* نقل العدد إذا لزم الأمر */
+}
+.navbar{
+    padding-block: 0 !important;
+    --bs-navbar-padding-y: 0 !important; 
+    --bs-navbar-brand-padding-y: 0 !important;
+    --bs-navbar-nav-link-padding-x: 0 !important;
+    --bs-navbar-brand-padding-y: 0 !important;
+}
+.icons button{
+    border: none;
+    background-color: inherit;
+}
+.cart-count {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/**           Start Navbar              */
+/**           Start login and register             */
+.btn-outline-info{
+    background-color: #151542;
+    --bs-btn-color:white; 
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:#151542e5;;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+    --bs-btn-disabled-color: none;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: none;
+    
+}
+ 
+ .w-35{
+    width: 35%;
+ }
+/**           End login and register             */
+/**           Start Landing              */
+
+.landing{
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.landing video{
+    width: 100%;
+}
+@media(max-width:767px){
+    .landing video{
+        height: 400px;
+    }
+}
+.inner{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.landing .content{
+    padding: 50px;
+    max-width: 800px;
+}
+.landing .content h1,
+.landing .content h3{
+    font-family: serif;
+}
+.landing .content h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+.landing .content h1{
+    font-size: 46px;
+    font-weight: 400;
+
+}
+.landing .content p{
+    max-width: 600px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+.landing .content button{
+    background-color: var(--dark-color);
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 20px;
+    width: 250px;
+}
+/**           End Landing              */
+/**           Start Explore              */
+.explore{
+    margin-bottom: 60px;
+}
+.explore h1{
+    color: var(--dark-color);
+    line-height: 5;
+    font-family: serif;
+    font-size: 40px;
+}
+@media(max-width:767px){
+    .explore h1{
+        margin-top: 0;
+        line-height: 3;
+        font-size: 35px;
+    }
+}
+.explore .box img{
+    width: 300px;
+}
+@media(max-width:767px){
+    .explore .box img{
+        width: 130px;
+    }
+}
+.explore .box p{
+    color: var(--dark-color);
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+    font-family: serif;
+}
+@media(max-width:767px){
+    .explore .box p{
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+/**           End Explore              */
+/**          Start Background-image-one          */
+.back-image-one {
+    background-image: url(../images/DYO_Banner_small.7c4bb.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+@media (max-width: 767px) {
+    .back-image-one {
+        height: 200px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .back-image-one {
+        height: 370px;
+    }
+}
+@media (min-width: 992px) {
+    .back-image-one {
+        height: 100vh;
+    }
+}
+/**          End Background-image-one          */
+/**          Start Classics          */
+.classics {
+    margin-bottom: 20px;
+}
+.classics h1 {
+    text-align: center;
+    color: var(--dark-color);
+    line-height: 20px;
+    font-family: serif;
+    font-size: 50px;
+    padding: 60px 0px 5px;
+}
+@media (max-width: 767px) {
+    .classics h1 {
+        margin-top: 0;
+        font-size: 35px;
+        padding-bottom: 0;
+    }
+}
+.classics p {
+    text-align: center;
+    color: var(--dark-color);
+    font-size: 24px;
+    padding-bottom: 40px;
+}
+.classics .left-content img,
+.classics .right-content img {
+    width: 100%;
+    height: auto;
+}
+.classics .content p {
+    padding-bottom: 0;
+    color: var(--dark-color);
+    padding-top: 10px;
+    font-weight: 500;
+}
+/**          End Classics          */
+/**          Start Background-image-two          */
+.back-image-two {
+    background-image: url(../images/lab_diamonds_sale_banner_tablet.c1915.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+@media (max-width: 767px) {
+    .back-image-two {
+        height: 200px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .back-image-two {
+        height: 370px;
+    }
+}
+@media (min-width: 992px) {
+    .back-image-two {
+        height: 100vh;
+    }
+}
+/**          End Background-image-two          */
+/**          Start Design           */
+.design p {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+/**          End Design           */
+/**          Start Background-image-three          */
+.back-image-three {
+    background-image: url(../images/astorCollectionBanner_small.efca5.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+@media (max-width: 767px) {
+    .back-image-three {
+        height: 200px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .back-image-three {
+        height: 370px;
+    }
+}
+@media (min-width: 992px) {
+    .back-image-three {
+        height: 100vh;
+    }
+}
+/**          End Background-image-three          */
+/**          Start Store            */
+.store{
+    padding: 40px 0;
+    background-color: var(--dark-color);
+    color: white;
+}
+.store p:first-child,
+.store h1 {
+    font-family: serif;
+}
+.store p:first-child{
+    font-weight: bold;
+    line-height: 20px;
+}
+.store h1{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 500;
+}
+.store p:nth-child(3){
+    line-height: 20px;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+.store button{
+    background-color: white;
+    border-radius: 4px;
+    color: var(--dark-color);
+    font-size: 18px;
+    padding: 15px 35px;
+    width: 300px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+/**          End Store            */
+/**          Start Background-image-four          */
+.back-image-four {
+    background-image: url(../images/engagement_mobile.28c7c.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding: 300px;
+}
+@media (max-width: 767px) {
+    .back-image-four {
+        height: 200px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .back-image-four {
+        height: 370px;
+    }
+}
+@media (min-width: 992px) {
+    .back-image-four {
+        height: 100vh;
+    }
+}
+/**          End Background-image-four          */
+/**          Start buying            */
+.buying{
+    background-color: #f7f7f7;
+    padding: 120px 0 20px;
+}
+.buying h1{
+    color: var(--dark-color);
+    line-height: 20px;
+    font-family: serif;
+    font-size: 50px;
+}
+@media(max-width:767px){
+    .buying h1{
+        font-size: 40px;
+    }
+}
+.buying p{
+    line-height: 20px;
+    font-size: 22px;
+    padding-bottom: 30px;
+    color: var(--dark-color);
+    padding-bottom: 60px;
+}
+.top-content img {
+    width: 100%;
+}
+.left-content,
+.right-content{
+    padding: 20px;
+}
+.buying .down-content h5{
+    font-weight: 600;
+    font-size: 19px;
+    color: var(--dark-color);
+}
+.buying .down-content p{
+    font-size: 16px;
+    color: var(--dark-color);
+}
+/**          End buying            */
+/**          Start Handcraft            */
+.handcraft{
+    padding: 80px 0;
+}
+.handcraft .left-content{
+    margin-top: 100px;
+}
+.handcraft .left-content h1{
+    color: var(--dark-color);
+    font-family: serif;
+    font-size: 40px;
+}
+.handcraft .left-content p{
+    color: var(--dark-color);
+    line-height: 28px;
+}
+.handcraft .left-content button{
+    background-color: var(--dark-color);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    width: 240px;
+    margin-top: 30px;
+}
+/**          End Handcraft            */
+/**          Start Footer            */
+footer{
+    border-top: 1px solid var(--dark-color);
+}
+footer .left-content h1{
+    font-family: serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+@media(max-width:767px){
+    footer .left-content h1{
+        display: none;
+    }
+}
+footer .left-content p,
+footer .right-content p{
+    margin-top: 45px;
+    margin-left: 15px;
+    color: var(--dark-color);
+}
+footer .left-content,
+footer .right-content{
+    padding: 0;
+}
+/**          End Footer            */
+
+
+
+              /*!                    Start Diamonds Page Style                               */
+                        /**                    Start Landing Section                       */
+.landing .landing-dia-img{
+background-image: url(../images/Diamonds.jpeg);
+background-position: center center;
+background-size: cover;
+width: 100%;
+height: 600px;
+}
+@media(max-width:767px){
+.landing .landing-dia-img{
+    height: 400px;
+}
+}
+.diamond{
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+.landing .diamond .content{
+    padding: 50px;
+    max-width: 800px;
+    color: white;
+}
+.landing .diamond .content h1,
+.landing .diamond .content h3{
+    font-family: serif;
+}
+.landing .diamond .content h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+.landing .diamond .content h1{
+    font-size: 46px;
+    font-weight: 400;
+}
+.landing .diamond .content p{
+    max-width: 750px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+.landing .diamond .content .button{
+    display: flex;
+    flex-direction: column;
+}
+.landing .diamond .content .button button{
+    background-color: white;
+    color: var(--dark-color);
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 20px 40px;
+    width: 260px;
+}
+                        /**                    End Landing Section                       */
+                        /**                    Start Cards Section                       */
+.cards{
+    padding: 60px 0px;
+}
+ 
+.cards .card p{
+    line-height: 22px;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: serif;
+}
+.cards .card a{
+    background-color: var(--dark-color);
+    color: white;
+    padding: 10px 20px;
+}
+                        /**                    End Cards Section                       */
+              /*!                    End Diamonds Page Style                               */
+              /*!                    Start Engagment Page Style                               */
+                        /**                    Start Landing Eng Section                       */
+.landing .landing-eng-img{
+    background-image: url(https://dam.bluenile.com/images/public/24843/Six_Blue_Nile_diamond_engagement_rings_in_gold_and_platinum.jpeg);
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+@media(max-width:767px){
+.landing .landing-eng-img{
+    height: 400px;
+}
+    }
+.engag{
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+.landing .engag .content{
+    padding: 50px;
+    max-width: 800px;
+    color: white;
+}
+.landing .engag .content h1,
+.landing .engag .content h3{
+    font-family: serif;
+}
+.landing .engag .content h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+.landing .engag .content h1{
+    font-size: 46px;
+    font-weight: 400;
+}
+.landing .engag .content p{
+    max-width: 750px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+.landing .engag .content .button{
+    display: flex;
+    flex-direction: column;
+}
+.landing .engag .content .button button{
+    background-color: white;
+    color: var(--dark-color);
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 20px 40px;
+    width: 260px;
+}
+                            /**                    End Landing Section                       */
+                  /*!                    End Diamonds Page Style                               */
+                  /*!                    Start Wedding Page Style                               */
+                        /**                    Start Landing Eng Section                       */
+.landing .landing-wed-img{
+    background-image: url(https://dam.bluenile.com/images/public/24630/WEDDING_RINGS.jpeg);
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+@media(max-width:767px){
+.landing .landing-wed-img{
+    height: 400px;
+}
+}
+.wedd{
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+.landing .wedd .content{
+    padding: 50px;
+    max-width: 800px;
+    color: white;
+}
+.landing .wedd .content h1,
+.landing .wedd .content h3{
+    font-family: serif;
+}
+.landing .wedd .content h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+.landing .wedd .content h1{
+    font-size: 46px;
+    font-weight: 400;
+}
+.landing .wedd .content p{
+    max-width: 750px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+.landing .wedd .content .button button{
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 20px 40px;
+    width: 400px;
+}
+                            /**                    End Landing Section                       */
+                  /*!                    End Wedding Page Style                               */
+                  /*!                    Start Jewelry Page Style                               */
+                        /**                    Start Landing Eng Section                       */
+.landing .landing-jew-img{
+    background-image: url(https://dam.bluenile.com/images/public/21095/Blue_Nile_Diamond_Jewelry.jpeg);
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+@media(max-width:767px){
+.landing .landing-jew-img{
+    height: 400px;
+}
+}
+.jew{
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+.landing .jew .content{
+    padding: 50px;
+    max-width: 900px;
+    color: white;
+}
+.landing .jew .content h1{
+    font-family: serif;
+    font-size: 46px;
+    font-weight: 400;
+}
+.landing .jew .content p{
+    max-width: 900px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+.landing .jew .content .button button{
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 20px 40px;
+    width: 400px;
+}
+                            /**                    End Landing Section                       */
+                  /*!                    End Jewelry Page Style                               */
+                  /*!                    Start About Page Style                               */
+                     /**                    Start Landing Eng Section                       */
+.landing {
+    min-height: 100vh;
+    padding: 20px 0;
+}
+@media (max-width: 767px) {
+    .landing {
+        padding: 50px 0;
+    }
+}
+.landing .row h1{
+    font-size: 46px;
+    font-weight: bold;
+}
+.landing .row p,
+.landing .row h4,
+.landing .row h1 {
+    color: var(--dark-color);
+}
+                    /**                    End Landing Section                       */
+                  /*!                    End About Page Style                               */
